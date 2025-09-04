@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "category": "Malaria",
+    "audience": ["Women", "Men", "Kids", "General"],
+    "text": "Sleep under an insecticide-treated bed net every night. Check for holes and tuck it properly.",
+    "keywords": ["mosquito", "ITN", "LLIN", "bed net"],
+    "source": "https://www.cdc.gov/malaria/php/public-health-strategy/insecticide-treated-nets.html"
+  },
+  {
+    "id": 2,
+    "category": "Malaria",
+    "audience": ["Women", "Kids", "General"],
+    "text": "Pregnant women and children under 5 are at higher risk — ensure consistent net use and seek prompt testing for fever.",
+    "keywords": ["pregnant", "fever", "testing"],
+    "source": "https://www.afro.who.int/countries/nigeria/news/protecting-families-against-malaria-using-long-lasting-insecticide-nets"
+  },
+  {
+    "id": 3,
+    "category": "Malaria",
+    "audience": ["Men", "Women", "General"],
+    "text": "Reduce mosquito breeding: clear gutters, cover water containers, and remove stagnant water around the home.",
+    "keywords": ["stagnant water", "environmental management"],
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3702346/"
+  },
+  {
+    "id": 4,
+    "category": "Cholera",
+    "audience": ["Women", "Men", "Kids", "General"],
+    "text": "Drink and use safe water only: boil, treat, or use bottled water for drinking, brushing teeth, and washing fruits/veggies.",
+    "keywords": ["safe water", "boil", "treat"],
+    "source": "https://www.cdc.gov/cholera/prevention/index.html"
+  },
+  {
+    "id": 5,
+    "category": "Cholera",
+    "audience": ["Women", "Men", "Kids", "General"],
+    "text": "Wash hands with soap and safe water: after using the toilet and before preparing/eating food.",
+    "keywords": ["handwashing", "WASH"],
+    "source": "https://www.who.int/health-topics/cholera"
+  },
+  {
+    "id": 6,
+    "category": "Cholera",
+    "audience": ["General"],
+    "text": "During outbreaks, avoid raw or undercooked foods; eat food that is steaming hot or peel fruits yourself.",
+    "keywords": ["food safety", "cook", "peel"],
+    "source": "https://www.cdc.gov/cholera/prevention/index.html"
+  },
+  {
+    "id": 7,
+    "category": "Cholera",
+    "audience": ["General"],
+    "text": "If you have watery diarrhoea, start Oral Rehydration Solution (ORS) immediately and seek care — dehydration can be deadly.",
+    "keywords": ["ORS", "dehydration", "diarrhoea"],
+    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+  },
+  {
+    "id": 8,
+    "category": "Cholera",
+    "audience": ["General"],
+    "text": "Follow Nigeria CDC advisories during rainy season and outbreaks (e.g., Lagos 2024) and report symptoms early.",
+    "keywords": ["NCDC", "outbreak", "report"],
+    "source": "https://ncdc.gov.ng/news/513/stop-cholera%3A-public-health-advisory"
+  },
+  {
+    "id": 9,
+    "category": "Menstrual Hygiene",
+    "audience": ["Women", "Kids"],
+    "text": "Wash hands before and after changing pads/tampons. Change pads every 4–6 hours (up to 8h depending on flow).",
+    "keywords": ["MHM", "hand hygiene", "change pads"],
+    "source": "https://www.unicef.org/egypt/menstrual-cycle"
+  },
+  {
+    "id": 10,
+    "category": "Menstrual Hygiene",
+    "audience": ["Women", "Kids"],
+    "text": "Dispose used pads safely: wrap securely and place in a bin. Do not flush.",
+    "keywords": ["disposal", "wrap", "bin"],
+    "source": "https://www.unicef.org/egypt/menstrual-cycle"
+  },
+  {
+    "id": 11,
+    "category": "Menstrual Hygiene",
+    "audience": ["Women"],
+    "text": "Choose products that suit you (disposable pads, reusable pads, cups). Keep reusable materials clean and fully dry before reuse.",
+    "keywords": ["pads", "cups", "reusable"],
+    "source": "https://www.unicef.org/media/91346/file/unicef-guide-menstrual-hygiene-materials-2019.pdf"
+  },
+  {
+    "id": 12,
+    "category": "Child Care",
+    "audience": ["Kids", "Women", "Men"],
+    "text": "Keep immunizations up to date and use insecticide-treated nets for children under 5.",
+    "keywords": ["vaccination", "nets"],
+    "source": "https://www.cdc.gov/malaria/php/public-health-strategy/insecticide-treated-nets.html"
+  },
+  {
+    "id": 13,
+    "category": "Child Care",
+    "audience": ["Kids", "Women", "Men"],
+    "text": "For diarrhoea, encourage fluids and give WHO low-osmolarity ORS; watch for danger signs like lethargy or no urine.",
+    "keywords": ["ORS", "diarrhoea", "danger signs"],
+    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+  },
+  {
+    "id": 14,
+    "category": "Child Care",
+    "audience": ["Kids", "Women", "Men"],
+    "text": "Breastfeed infants exclusively for the first 6 months; introduce safe complementary foods thereafter.",
+    "keywords": ["breastfeeding", "nutrition"],
+    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+  },
+  {
+    "id": 15,
+    "category": "COVID-19",
+    "audience": ["Women", "Men", "Kids", "General"],
+    "text": "Stay up to date with vaccination and local guidance. Avoid crowded, poorly ventilated spaces.",
+    "keywords": ["vaccine", "ventilation", "crowds"],
+    "source": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+  },
+  {
+    "id": 16,
+    "category": "COVID-19",
+    "audience": ["Women", "Men", "Kids", "General"],
+    "text": "Wear a well-fitted mask when distancing is not possible or ventilation is poor; keep hands clean.",
+    "keywords": ["mask", "hand hygiene"],
+    "source": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks"
+  },
+  {
+    "id": 17,
+    "category": "Malaria",
+    "audience": ["General"],
+    "text": "Seek testing within 24 hours of fever in malaria areas; avoid self-medication without diagnosis.",
+    "keywords": ["testing", "fever"],
+    "source": "https://www.afro.who.int/countries/nigeria/news/protecting-families-against-malaria-using-long-lasting-insecticide-nets"
+  },
+  {
+    "id": 18,
+    "category": "Cholera",
+    "audience": ["General"],
+    "text": "Oral cholera vaccines (OCV) can help in areas with active transmission; follow public health guidance.",
+    "keywords": ["OCV", "vaccine"],
+    "source": "https://www.who.int/news-room/fact-sheets/detail/cholera"
+  },
+  {
+    "id": 19,
+    "category": "Menstrual Hygiene",
+    "audience": ["Women", "Kids"],
+    "text": "Track your cycle to anticipate supplies, manage symptoms, and seek care if periods are extremely painful or very heavy.",
+    "keywords": ["tracking", "dysmenorrhea"],
+    "source": "https://www.unicef.org/egypt/menstrual-cycle"
+  },
+  {
+    "id": 20,
+    "category": "Child Care",
+    "audience": ["Kids", "Women", "Men"],
+    "text": "If a child shows signs of severe dehydration (very sleepy, sunken eyes, no urine), go to a health facility immediately.",
+    "keywords": ["severe dehydration", "urgent"],
+    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+  }
+]
