@@ -1,150 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NaijaCare Lite</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
-
-  <!-- Tailwind (Play CDN for prototype/demo) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
-          colors: {
-            primary: { DEFAULT: '#10B981', 50:'#ECFDF5',100:'#D1FAE5',200:'#A7F3D0',300:'#6EE7B7',400:'#34D399',500:'#10B981',600:'#059669',700:'#047857'},
-            coral: { DEFAULT: '#F87171' }
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaijaCare Lite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'naija-green': '#16a34a',
+              'naija-red': '#f87171',
+              'naija-blue': '#0ea5e9',
+            },
           },
-          boxShadow: {
-            soft: '0 6px 24px rgba(16,185,129,.15)'
-          }
-        }
+        },
       }
-    }
-  </script>
-
-  <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-  <meta name="theme-color" content="#10B981" />
-  <style>
-    /* Subtle animated gradient header */
-    .hero {
-      background: radial-gradient(1200px 600px at 20% -10%, #34D39922, transparent),
-                  radial-gradient(1000px 600px at 100% 10%, #F8717114, transparent),
-                  linear-gradient(180deg, #fff, #fafafa);
-    }
-    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.7) }
-  </style>
+    </script>
+    
+<style>
+  #map {
+    height: 250px;
+    border-radius: 12px;
+  }
+</style>
 </head>
-<body class="bg-white text-slate-800 font-sans">
-  <!-- Top Bar -->
-  <header class="hero sticky top-0 z-50 border-b border-slate-100">
-    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center gap-3">
-      <div class="h-10 w-10 rounded-xl bg-primary-100 flex items-center justify-center shadow-soft">
-        <span class="text-2xl">🧪</span>
-      </div>
-      <div class="flex-1">
-        <h1 class="text-xl md:text-2xl font-extrabold tracking-tight">NaijaCare <span class="text-primary-600">Lite</span></h1>
-        <p class="text-sm text-slate-500 -mt-1">Reliable health tips, anytime, anywhere.</p>
-      </div>
+<body class="bg-gray-50 font-sans">
 
-      <!-- Pill nav -->
-      <nav class="hidden md:flex gap-2">
-        <button data-view="tips" class="nav-btn active px-3 py-1.5 rounded-full bg-primary-600 text-white text-sm font-semibold">Tips</button>
-        <button data-view="map"  class="nav-btn px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-sm font-semibold">Facilities</button>
-      </nav>
-    </div>
-
-    <!-- Search + filters -->
-    <div class="mx-auto max-w-6xl px-4 pb-4">
-      <div class="glass rounded-2xl border border-slate-100 p-3 md:p-4 shadow-soft">
-        <div class="flex flex-col md:flex-row gap-3 md:items-center">
-          <div class="relative flex-1">
-            <input id="searchInput" type="search" placeholder="Search tips e.g. “cholera”, “period”, “mosquito”"
-              class="w-full rounded-xl border border-slate-200 bg-white/70 py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary-400" />
-            <span class="absolute left-3 top-2.5 text-slate-400 text-xl">🔎</span>
-          </div>
-          <div class="flex gap-2 flex-wrap">
-            <button class="aud-btn px-3 py-2 rounded-full bg-slate-100 text-xs font-semibold" data-audience="All">All</button>
-            <button class="aud-btn px-3 py-2 rounded-full bg-slate-100 text-xs font-semibold" data-audience="Women">Women</button>
-            <button class="aud-btn px-3 py-2 rounded-full bg-slate-100 text-xs font-semibold" data-audience="Men">Men</button>
-            <button class="aud-btn px-3 py-2 rounded-full bg-slate-100 text-xs font-semibold" data-audience="Kids">Kids</button>
-          </div>
+    <!-- App container -->
+    <div id="app-container">
+        <!-- Offline Banner -->
+        <div id="offline-banner" class="hidden bg-naija-red text-white text-center p-2 font-bold text-sm sticky top-0 z-50">
+            You are offline. Some features may be unavailable.
         </div>
 
-        <div class="mt-3 overflow-x-auto">
-          <div id="catTabs" class="inline-flex gap-2 min-w-max">
-            <!-- Category tabs injected -->
-          </div>
+        <!-- Landing Screen -->
+        <section id="landing-screen" class="screen active">
+            <div class="flex flex-col items-center justify-center min-h-screen bg-white text-center p-4">
+                <svg class="h-24 w-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path d="M42,20 H58 V42 H80 V58 H58 V80 H42 V58 H20 V42 H42Z" class="fill-gray-300"></path>
+                    <path d="M60,20 C80,20 90,40 70,60 C50,80 50,60 60,40 C65,30 60,20 60,20Z" fill="url(#leafGradient)" transform="rotate(45 50 50)"></path>
+                </svg>
+                <h1 class="text-4xl font-bold mt-4 text-gray-800">NaijaCare Lite</h1>
+                <p class="text-lg text-gray-500 mt-2">Your pocket health guide</p>
+                <button id="start-browsing-btn" class="mt-12 px-8 py-3 bg-naija-blue text-white font-bold text-lg rounded-lg shadow-lg hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-opacity-50 transition-transform transform hover:scale-105">
+                    Start Browsing Tips
+                </button>
+            </div>
+        </section>
+
+        <!-- Main Content (Tips & Map Screens) -->
+        <div id="main-app" class="screen">
+            <main id="main-content" class="pb-20">
+                <!-- Content will be dynamically injected here -->
+            </main>
+            <nav id="bottom-nav" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg flex justify-around h-16 z-40">
+                <!-- Nav items will be dynamically injected here -->
+            </nav>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Tips View -->
-  <main id="tipsView" class="mx-auto max-w-6xl px-4 py-6">
-    <div id="resultsMeta" class="text-sm text-slate-500 mb-3"></div>
-    <div id="tipsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-      <!-- Cards injected -->
     </div>
 
-    <div id="emptyState" class="hidden text-center py-16">
-      <div class="text-5xl mb-3">🔍</div>
-      <p class="text-slate-600">No tips match your search. Try a different keyword.</p>
-    </div>
-  </main>
+<script src="app.js" defer></script>
 
-  <!-- Map View -->
-  <section id="mapView" class="hidden mx-auto max-w-6xl px-4 py-6">
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="md:col-span-2">
-        <div id="map" class="h-[460px] rounded-2xl border border-slate-200 shadow-soft"></div>
-      </div>
-      <aside class="space-y-3">
-        <div class="rounded-2xl border border-slate-200 p-4 shadow-soft">
-          <h2 class="font-bold text-lg">Find Nearby Health Facility</h2>
-          <p class="text-sm text-slate-600">Enable location to calculate the closest facility and show directions.</p>
-          <button id="locateBtn" class="mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700">
-            📍 Use my location
-          </button>
-          <div id="nearestInfo" class="mt-3 text-sm text-slate-700"></div>
-        </div>
-
-        <div class="rounded-2xl border border-slate-200 p-4 shadow-soft">
-          <h3 class="font-bold">Facilities</h3>
-          <div id="facilityList" class="mt-2 space-y-2 max-h-[260px] overflow-y-auto">
-            <!-- Facility cards -->
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- Offline banner -->
-  <div id="offlineBanner" class="hidden fixed bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-slate-900 text-white text-sm shadow-lg">
-    No Internet? No problem. You’re in offline mode ✔️
-  </div>
-
-  <footer class="mt-10 border-t border-slate-100">
-    <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
-      Built for Nigerian communities • Tips from reputable sources (WHO, UNICEF, CDC, NCDC).
-    </div>
-  </footer>
-
-  <script defer src="./app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
-    }
-  </script>
 </body>
 </html>

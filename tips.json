@@ -1,162 +1,709 @@
 [
+ 
   {
     "id": 1,
     "category": "Malaria",
-    "audience": ["Women", "Men", "Kids", "General"],
-    "text": "Sleep under an insecticide-treated bed net every night. Check for holes and tuck it properly.",
-    "keywords": ["mosquito", "ITN", "LLIN", "bed net"],
-    "source": "https://www.cdc.gov/malaria/php/public-health-strategy/insecticide-treated-nets.html"
+    "title": "Use Mosquito Nets",
+    "description": "Always sleep under an insecticide-treated mosquito net.",
+    "icon": "🦟"
   },
   {
     "id": 2,
     "category": "Malaria",
-    "audience": ["Women", "Kids", "General"],
-    "text": "Pregnant women and children under 5 are at higher risk — ensure consistent net use and seek prompt testing for fever.",
-    "keywords": ["pregnant", "fever", "testing"],
-    "source": "https://www.afro.who.int/countries/nigeria/news/protecting-families-against-malaria-using-long-lasting-insecticide-nets"
+    "title": "Indoor Spraying",
+    "description": "Spray insecticides on indoor walls to kill resting mosquitoes.",
+    "icon": "🏠"
   },
   {
     "id": 3,
     "category": "Malaria",
-    "audience": ["Men", "Women", "General"],
-    "text": "Reduce mosquito breeding: clear gutters, cover water containers, and remove stagnant water around the home.",
-    "keywords": ["stagnant water", "environmental management"],
-    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3702346/"
+    "title": "Wear Protective Clothing",
+    "description": "Wear long sleeves and trousers, especially at night.",
+    "icon": "👕"
   },
   {
     "id": 4,
-    "category": "Cholera",
-    "audience": ["Women", "Men", "Kids", "General"],
-    "text": "Drink and use safe water only: boil, treat, or use bottled water for drinking, brushing teeth, and washing fruits/veggies.",
-    "keywords": ["safe water", "boil", "treat"],
-    "source": "https://www.cdc.gov/cholera/prevention/index.html"
+    "category": "Malaria",
+    "title": "Drain Stagnant Water",
+    "description": "Clear gutters, buckets, and puddles around your home.",
+    "icon": "💧"
   },
   {
     "id": 5,
-    "category": "Cholera",
-    "audience": ["Women", "Men", "Kids", "General"],
-    "text": "Wash hands with soap and safe water: after using the toilet and before preparing/eating food.",
-    "keywords": ["handwashing", "WASH"],
-    "source": "https://www.who.int/health-topics/cholera"
+    "category": "Malaria",
+    "title": "Seek Early Diagnosis",
+    "description": "Visit a health center quickly if you develop fever, chills, or headache.",
+    "icon": "🤒"
   },
   {
     "id": 6,
-    "category": "Cholera",
-    "audience": ["General"],
-    "text": "During outbreaks, avoid raw or undercooked foods; eat food that is steaming hot or peel fruits yourself.",
-    "keywords": ["food safety", "cook", "peel"],
-    "source": "https://www.cdc.gov/cholera/prevention/index.html"
+    "category": "Malaria",
+    "title": "Take Full Treatment",
+    "description": "Always complete malaria medication even if you feel better.",
+    "icon": "💊"
   },
   {
     "id": 7,
-    "category": "Cholera",
-    "audience": ["General"],
-    "text": "If you have watery diarrhoea, start Oral Rehydration Solution (ORS) immediately and seek care — dehydration can be deadly.",
-    "keywords": ["ORS", "dehydration", "diarrhoea"],
-    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+    "category": "Malaria",
+    "title": "Protect Children",
+    "description": "Ensure children sleep under treated nets as they are more vulnerable.",
+    "icon": "👶"
   },
   {
     "id": 8,
-    "category": "Cholera",
-    "audience": ["General"],
-    "text": "Follow Nigeria CDC advisories during rainy season and outbreaks (e.g., Lagos 2024) and report symptoms early.",
-    "keywords": ["NCDC", "outbreak", "report"],
-    "source": "https://ncdc.gov.ng/news/513/stop-cholera%3A-public-health-advisory"
+    "category": "Malaria",
+    "title": "Pregnancy Protection",
+    "description": "Pregnant women should use preventive malaria drugs (IPT).",
+    "icon": "🤰"
   },
   {
     "id": 9,
-    "category": "Menstrual Hygiene",
-    "audience": ["Women", "Kids"],
-    "text": "Wash hands before and after changing pads/tampons. Change pads every 4–6 hours (up to 8h depending on flow).",
-    "keywords": ["MHM", "hand hygiene", "change pads"],
-    "source": "https://www.unicef.org/egypt/menstrual-cycle"
+    "category": "Malaria",
+    "title": "Screen Windows",
+    "description": "Install mosquito screens on windows and doors to block entry.",
+    "icon": "🪟"
   },
   {
     "id": 10,
-    "category": "Menstrual Hygiene",
-    "audience": ["Women", "Kids"],
-    "text": "Dispose used pads safely: wrap securely and place in a bin. Do not flush.",
-    "keywords": ["disposal", "wrap", "bin"],
-    "source": "https://www.unicef.org/egypt/menstrual-cycle"
+    "category": "Malaria",
+    "title": "Travel Prepared",
+    "description": "Take malaria prophylaxis when traveling to high-risk zones.",
+    "icon": "🧳"
   },
   {
     "id": 11,
-    "category": "Menstrual Hygiene",
-    "audience": ["Women"],
-    "text": "Choose products that suit you (disposable pads, reusable pads, cups). Keep reusable materials clean and fully dry before reuse.",
-    "keywords": ["pads", "cups", "reusable"],
-    "source": "https://www.unicef.org/media/91346/file/unicef-guide-menstrual-hygiene-materials-2019.pdf"
+    "category": "Malaria",
+    "title": "Community Clean-Up",
+    "description": "Participate in neighborhood clean-ups to destroy breeding sites.",
+    "icon": "🧹"
   },
   {
     "id": 12,
-    "category": "Child Care",
-    "audience": ["Kids", "Women", "Men"],
-    "text": "Keep immunizations up to date and use insecticide-treated nets for children under 5.",
-    "keywords": ["vaccination", "nets"],
-    "source": "https://www.cdc.gov/malaria/php/public-health-strategy/insecticide-treated-nets.html"
+    "category": "Malaria",
+    "title": "Avoid Night Exposure",
+    "description": "Limit outdoor activity at dusk and dawn when mosquitoes are active.",
+    "icon": "🌙"
   },
   {
     "id": 13,
-    "category": "Child Care",
-    "audience": ["Kids", "Women", "Men"],
-    "text": "For diarrhoea, encourage fluids and give WHO low-osmolarity ORS; watch for danger signs like lethargy or no urine.",
-    "keywords": ["ORS", "diarrhoea", "danger signs"],
-    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+    "category": "Malaria",
+    "title": "Use Insect Repellent",
+    "description": "Apply DEET-based repellents on exposed skin.",
+    "icon": "🧴"
   },
   {
     "id": 14,
-    "category": "Child Care",
-    "audience": ["Kids", "Women", "Men"],
-    "text": "Breastfeed infants exclusively for the first 6 months; introduce safe complementary foods thereafter.",
-    "keywords": ["breastfeeding", "nutrition"],
-    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+    "category": "Malaria",
+    "title": "Recognize Severe Symptoms",
+    "description": "Confusion, seizures, or difficulty breathing need urgent care.",
+    "icon": "🚨"
   },
   {
     "id": 15,
-    "category": "COVID-19",
-    "audience": ["Women", "Men", "Kids", "General"],
-    "text": "Stay up to date with vaccination and local guidance. Avoid crowded, poorly ventilated spaces.",
-    "keywords": ["vaccine", "ventilation", "crowds"],
-    "source": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+    "category": "Malaria",
+    "title": "Don’t Self-Medicate",
+    "description": "Avoid taking malaria medicine without proper diagnosis.",
+    "icon": "⛔"
   },
   {
     "id": 16,
-    "category": "COVID-19",
-    "audience": ["Women", "Men", "Kids", "General"],
-    "text": "Wear a well-fitted mask when distancing is not possible or ventilation is poor; keep hands clean.",
-    "keywords": ["mask", "hand hygiene"],
-    "source": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks"
+    "category": "Malaria",
+    "title": "Check Blood Smear",
+    "description": "Only a malaria test can confirm infection accurately.",
+    "icon": "🩸"
   },
   {
     "id": 17,
     "category": "Malaria",
-    "audience": ["General"],
-    "text": "Seek testing within 24 hours of fever in malaria areas; avoid self-medication without diagnosis.",
-    "keywords": ["testing", "fever"],
-    "source": "https://www.afro.who.int/countries/nigeria/news/protecting-families-against-malaria-using-long-lasting-insecticide-nets"
+    "title": "Educate Family",
+    "description": "Teach children and adults about mosquito bite prevention.",
+    "icon": "👨‍👩‍👧"
   },
   {
     "id": 18,
-    "category": "Cholera",
-    "audience": ["General"],
-    "text": "Oral cholera vaccines (OCV) can help in areas with active transmission; follow public health guidance.",
-    "keywords": ["OCV", "vaccine"],
-    "source": "https://www.who.int/news-room/fact-sheets/detail/cholera"
+    "category": "Malaria",
+    "title": "Stay Hydrated",
+    "description": "Drink fluids when recovering from malaria to avoid dehydration.",
+    "icon": "🥤"
   },
   {
     "id": 19,
-    "category": "Menstrual Hygiene",
-    "audience": ["Women", "Kids"],
-    "text": "Track your cycle to anticipate supplies, manage symptoms, and seek care if periods are extremely painful or very heavy.",
-    "keywords": ["tracking", "dysmenorrhea"],
-    "source": "https://www.unicef.org/egypt/menstrual-cycle"
+    "category": "Malaria",
+    "title": "Rest Well",
+    "description": "Adequate rest helps the body recover faster from infection.",
+    "icon": "🛌"
   },
   {
     "id": 20,
-    "category": "Child Care",
-    "audience": ["Kids", "Women", "Men"],
-    "text": "If a child shows signs of severe dehydration (very sleepy, sunken eyes, no urine), go to a health facility immediately.",
-    "keywords": ["severe dehydration", "urgent"],
-    "source": "https://www.who.int/publications-detail-redirect/WHO-FCH-CAH-06.1"
+    "category": "Malaria",
+    "title": "Report Outbreaks",
+    "description": "Inform health workers about unusual malaria cases in your area.",
+    "icon": "📞"
+  },
+  {
+    "id": 21,
+    "category": "Malaria",
+    "title": "Seasonal Awareness",
+    "description": "Malaria risk is higher during rainy seasons – take extra care.",
+    "icon": "🌧️"
+  },
+  {
+    "id": 22,
+    "category": "Malaria",
+    "title": "Bedtime Routine",
+    "description": "Tuck mosquito nets properly around beds every night.",
+    "icon": "🛏️"
+  },
+  {
+    "id": 23,
+    "category": "Malaria",
+    "title": "Avoid Fake Drugs",
+    "description": "Buy malaria medicines only from trusted pharmacies.",
+    "icon": "🏥"
+  },
+  {
+    "id": 24,
+    "category": "Malaria",
+    "title": "Stay Informed",
+    "description": "Follow local malaria alerts and government campaigns.",
+    "icon": "📢"
+  },
+  {
+    "id": 25,
+    "category": "Malaria",
+    "title": "Care for the Vulnerable",
+    "description": "Protect children under 5 and pregnant women first.",
+    "icon": "❤️"
+  },
+
+
+  {
+    "id": 26,
+    "category": "Cholera",
+    "title": "Drink Safe Water",
+    "description": "Always boil or filter water before drinking.",
+    "icon": "🚰"
+  },
+  {
+    "id": 27,
+    "category": "Cholera",
+    "title": "Wash Hands Often",
+    "description": "Use soap and safe water before eating and after toilet use.",
+    "icon": "🧼"
+  },
+  {
+    "id": 28,
+    "category": "Cholera",
+    "title": "Cook Food Thoroughly",
+    "description": "Ensure all seafood and meat are well-cooked before eating.",
+    "icon": "🔥"
+  },
+  {
+    "id": 29,
+    "category": "Cholera",
+    "title": "Use ORS",
+    "description": "If diarrhea starts, take Oral Rehydration Solution immediately.",
+    "icon": "🧃"
+  },
+  {
+    "id": 30,
+    "category": "Cholera",
+    "title": "Avoid Street Food",
+    "description": "Street food may be contaminated. Eat freshly prepared meals at home.",
+    "icon": "🍲"
+  },
+  {
+    "id": 31,
+    "category": "Cholera",
+    "title": "Wash Fruits",
+    "description": "Wash fruits and vegetables with clean water before eating.",
+    "icon": "🥬"
+  },
+  {
+    "id": 32,
+    "category": "Cholera",
+    "title": "Sanitary Toilets",
+    "description": "Use clean toilets to prevent fecal contamination of water.",
+    "icon": "🚽"
+  },
+  {
+    "id": 33,
+    "category": "Cholera",
+    "title": "Safe Water Storage",
+    "description": "Keep drinking water in clean, covered containers.",
+    "icon": "🥤"
+  },
+  {
+    "id": 34,
+    "category": "Cholera",
+    "title": "Dispose Waste Safely",
+    "description": "Don’t dump waste in rivers or streams.",
+    "icon": "🗑️"
+  },
+  {
+    "id": 35,
+    "category": "Cholera",
+    "title": "Avoid Raw Seafood",
+    "description": "Do not eat raw shellfish or poorly cooked seafood.",
+    "icon": "🦐"
+  },
+  {
+    "id": 36,
+    "category": "Cholera",
+    "title": "Community Sanitation",
+    "description": "Participate in clean-up campaigns to improve hygiene.",
+    "icon": "🧹"
+  },
+  {
+    "id": 37,
+    "category": "Cholera",
+    "title": "Use Chlorine Tablets",
+    "description": "Disinfect water with chlorine before use.",
+    "icon": "💊"
+  },
+  {
+    "id": 38,
+    "category": "Cholera",
+    "title": "Treat Clothes Properly",
+    "description": "Wash clothes with safe water to avoid contamination.",
+    "icon": "👕"
+  },
+  {
+    "id": 39,
+    "category": "Cholera",
+    "title": "Seek Early Care",
+    "description": "If diarrhea persists, go to a health center quickly.",
+    "icon": "🏥"
+  },
+  {
+    "id": 40,
+    "category": "Cholera",
+    "title": "Breastfeed Infants",
+    "description": "Exclusive breastfeeding protects babies from cholera.",
+    "icon": "🤱"
+  },
+  {
+    "id": 41,
+    "category": "Cholera",
+    "title": "Avoid Open Defecation",
+    "description": "Always use toilets, never open fields or rivers.",
+    "icon": "🚫"
+  },
+  {
+    "id": 42,
+    "category": "Cholera",
+    "title": "Prepare ORS at Home",
+    "description": "Mix 1L of water, 6 tsp sugar, and 1/2 tsp salt for quick ORS.",
+    "icon": "🥄"
+  },
+  {
+    "id": 43,
+    "category": "Cholera",
+    "title": "Cover Food",
+    "description": "Keep cooked food covered to avoid flies.",
+    "icon": "🍱"
+  },
+  {
+    "id": 44,
+    "category": "Cholera",
+    "title": "Avoid Dirty Ice",
+    "description": "Only use ice made from safe water.",
+    "icon": "🧊"
+  },
+  {
+    "id": 45,
+    "category": "Cholera",
+    "title": "Report Cases",
+    "description": "Inform health workers about suspected cholera outbreaks.",
+    "icon": "📢"
+  },
+  {
+    "id": 46,
+    "category": "Cholera",
+    "title": "Stay Hydrated",
+    "description": "Drink water frequently to replace lost fluids.",
+    "icon": "💧"
+  },
+  {
+    "id": 47,
+    "category": "Cholera",
+    "title": "Hand Hygiene for Caregivers",
+    "description": "Wash hands after caring for a sick person.",
+    "icon": "👐"
+  },
+  {
+    "id": 48,
+    "category": "Cholera",
+    "title": "Avoid Reheating Multiple Times",
+    "description": "Reheated food repeatedly may harbor bacteria.",
+    "icon": "🍳"
+  },
+  {
+    "id": 49,
+    "category": "Cholera",
+    "title": "Community Awareness",
+    "description": "Educate neighbors about safe water and hygiene practices.",
+    "icon": "👥"
+  },
+  {
+    "id": 50,
+    "category": "Cholera",
+    "title": "Use Latrines Correctly",
+    "description": "Keep toilets clean and always flush with water.",
+    "icon": "🚻"
+  },
+
+ 
+  {
+    "id": 51,
+    "category": "Menstrual Hygiene",
+    "title": "Change Pads Regularly",
+    "description": "Change sanitary pads every 4–6 hours to prevent infections.",
+    "icon": "🩸"
+  },
+  {
+    "id": 52,
+    "category": "Menstrual Hygiene",
+    "title": "Dispose Pads Properly",
+    "description": "Wrap used pads in paper and discard in a bin.",
+    "icon": "🗑️"
+  },
+  {
+    "id": 53,
+    "category": "Menstrual Hygiene",
+    "title": "Wash Hands",
+    "description": "Always wash hands before and after changing pads.",
+    "icon": "✋"
+  },
+  {
+    "id": 54,
+    "category": "Menstrual Hygiene",
+    "title": "Use Clean Water",
+    "description": "Clean the genital area with safe water daily.",
+    "icon": "🚿"
+  },
+  {
+    "id": 55,
+    "category": "Menstrual Hygiene",
+    "title": "Track Your Cycle",
+    "description": "Use an app or calendar to track your monthly cycle.",
+    "icon": "📅"
+  },
+  {
+    "id": 56,
+    "category": "Menstrual Hygiene",
+    "title": "Wear Comfortable Clothing",
+    "description": "Loose-fitting clothes reduce discomfort during periods.",
+    "icon": "👗"
+  },
+  {
+    "id": 57,
+    "category": "Menstrual Hygiene",
+    "title": "Avoid Perfumed Products",
+    "description": "Avoid perfumed soaps and sprays in the genital area.",
+    "icon": "🚫"
+  },
+  {
+    "id": 58,
+    "category": "Menstrual Hygiene",
+    "title": "Carry Emergency Pads",
+    "description": "Always keep a spare pad in your bag in case of emergencies.",
+    "icon": "👜"
+  },
+  {
+    "id": 59,
+    "category": "Menstrual Hygiene",
+    "title": "Exercise Lightly",
+    "description": "Light exercise helps reduce cramps and discomfort.",
+    "icon": "🏃‍♀️"
+  },
+  {
+    "id": 60,
+    "category": "Menstrual Hygiene",
+    "title": "Eat Healthy",
+    "description": "A balanced diet helps reduce bloating and cramps.",
+    "icon": "🥗"
+  },
+  {
+    "id": 61,
+    "category": "Menstrual Hygiene",
+    "title": "Stay Hydrated",
+    "description": "Drink enough water to reduce bloating.",
+    "icon": "💧"
+  },
+  {
+    "id": 62,
+    "category": "Menstrual Hygiene",
+    "title": "Heat Therapy",
+    "description": "Use a hot water bottle to relieve menstrual cramps.",
+    "icon": "🌡️"
+  },
+  {
+    "id": 63,
+    "category": "Menstrual Hygiene",
+    "title": "Avoid Smoking",
+    "description": "Smoking can worsen cramps and menstrual health.",
+    "icon": "🚭"
+  },
+  {
+    "id": 64,
+    "category": "Menstrual Hygiene",
+    "title": "Rest Adequately",
+    "description": "Get enough sleep during your period for better health.",
+    "icon": "🛌"
+  },
+  {
+    "id": 65,
+    "category": "Menstrual Hygiene",
+    "title": "Seek Medical Help",
+    "description": "If periods are too painful, consult a health professional.",
+    "icon": "🏥"
+  },
+  {
+    "id": 66,
+    "category": "Menstrual Hygiene",
+    "title": "Avoid Sharing Pads",
+    "description": "Never share menstrual products with others.",
+    "icon": "🙅‍♀️"
+  },
+  {
+    "id": 67,
+    "category": "Menstrual Hygiene",
+    "title": "Maintain Privacy",
+    "description": "Change pads in a safe, private space.",
+    "icon": "🔒"
+  },
+  {
+    "id": 68,
+    "category": "Menstrual Hygiene",
+    "title": "Educate Girls",
+    "description": "Teach young girls about safe menstrual practices.",
+    "icon": "👩‍👧"
+  },
+  {
+    "id": 69,
+    "category": "Menstrual Hygiene",
+    "title": "Carry Disposal Bags",
+    "description": "Use small bags to dispose pads hygienically when outside.",
+    "icon": "🛍️"
+  },
+  {
+    "id": 70,
+    "category": "Menstrual Hygiene",
+    "title": "Stay Active",
+    "description": "Mild activities like yoga ease menstrual discomfort.",
+    "icon": "🧘‍♀️"
+  },
+  {
+    "id": 71,
+    "category": "Menstrual Hygiene",
+    "title": "Avoid Sugary Foods",
+    "description": "Sugar can increase bloating and cramps.",
+    "icon": "🍬"
+  },
+  {
+    "id": 72,
+    "category": "Menstrual Hygiene",
+    "title": "Support System",
+    "description": "Talk with friends or family for emotional support.",
+    "icon": "🤝"
+  },
+  {
+    "id": 73,
+    "category": "Menstrual Hygiene",
+    "title": "Avoid Stress",
+    "description": "Stress can worsen menstrual pain and irregularity.",
+    "icon": "😣"
+  },
+  {
+    "id": 74,
+    "category": "Menstrual Hygiene",
+    "title": "Use Comfortable Pads",
+    "description": "Choose products that feel comfortable for you.",
+    "icon": "✅"
+  },
+  {
+    "id": 75,
+    "category": "Menstrual Hygiene",
+    "title": "Change at Night",
+    "description": "Use longer, thicker pads for night protection.",
+    "icon": "🌙"
+  },
+
+
+  {
+    "id": 76,
+    "category": "Child Health",
+    "title": "Exclusive Breastfeeding",
+    "description": "Feed babies only breast milk for the first 6 months.",
+    "icon": "🤱"
+  },
+  {
+    "id": 77,
+    "category": "Child Health",
+    "title": "Immunization",
+    "description": "Ensure children receive all vaccinations on schedule.",
+    "icon": "💉"
+  },
+  {
+    "id": 78,
+    "category": "Child Health",
+    "title": "Deworming",
+    "description": "Give children deworming medicine every 6 months.",
+    "icon": "🪱"
+  },
+  {
+    "id": 79,
+    "category": "Child Health",
+    "title": "Balanced Diet",
+    "description": "Provide meals rich in vegetables, fruits, and protein.",
+    "icon": "🥦🍗"
+  },
+  {
+    "id": 80,
+    "category": "Child Health",
+    "title": "Safe Play",
+    "description": "Allow children to play in clean, safe spaces.",
+    "icon": "⚽"
+  },
+  {
+    "id": 81,
+    "category": "Child Health",
+    "title": "Wash Hands Often",
+    "description": "Teach children to wash hands with soap regularly.",
+    "icon": "🧼"
+  },
+  {
+    "id": 82,
+    "category": "Child Health",
+    "title": "Prevent Injuries",
+    "description": "Keep sharp objects and medicines away from children.",
+    "icon": "🔪"
+  },
+  {
+    "id": 83,
+    "category": "Child Health",
+    "title": "Oral Hygiene",
+    "description": "Brush children’s teeth twice daily with fluoride toothpaste.",
+    "icon": "🪥"
+  },
+  {
+    "id": 84,
+    "category": "Child Health",
+    "title": "Adequate Sleep",
+    "description": "Children need 8–10 hours of sleep daily for growth.",
+    "icon": "😴"
+  },
+  {
+    "id": 85,
+    "category": "Child Health",
+    "title": "Monitor Growth",
+    "description": "Check weight and height regularly at health centers.",
+    "icon": "📏"
+  },
+  {
+    "id": 86,
+    "category": "Child Health",
+    "title": "Avoid Sugary Drinks",
+    "description": "Reduce sodas and sweet drinks to prevent obesity.",
+    "icon": "🥤"
+  },
+  {
+    "id": 87,
+    "category": "Child Health",
+    "title": "Regular Exercise",
+    "description": "Encourage children to run, play, and exercise daily.",
+    "icon": "🏃‍♂️"
+  },
+  {
+    "id": 88,
+    "category": "Child Health",
+    "title": "Screen Time Limit",
+    "description": "Limit TV and phone usage to under 2 hours daily.",
+    "icon": "📱"
+  },
+  {
+    "id": 89,
+    "category": "Child Health",
+    "title": "Dehydration Signs",
+    "description": "Look for dry lips or sunken eyes; give fluids immediately.",
+    "icon": "🥵"
+  },
+  {
+    "id": 90,
+    "category": "Child Health",
+    "title": "Parental Bonding",
+    "description": "Spend quality time to build children’s confidence.",
+    "icon": "❤️"
+  },
+  {
+    "id": 91,
+    "category": "Child Health",
+    "title": "Handwashing Before Meals",
+    "description": "Always wash hands before children eat.",
+    "icon": "🍽️"
+  },
+  {
+    "id": 92,
+    "category": "Child Health",
+    "title": "Vitamin Supplements",
+    "description": "Provide Vitamin A and iron supplements when needed.",
+    "icon": "💊"
+  },
+  {
+    "id": 93,
+    "category": "Child Health",
+    "title": "Breastfeeding at Night",
+    "description": "Feed infants at night to promote better growth.",
+    "icon": "🌙"
+  },
+  {
+    "id": 94,
+    "category": "Child Health",
+    "title": "Safe Water",
+    "description": "Ensure children only drink boiled or filtered water.",
+    "icon": "🚰"
+  },
+  {
+    "id": 95,
+    "category": "Child Health",
+    "title": "Avoid Junk Food",
+    "description": "Reduce sweets, chips, and processed snacks.",
+    "icon": "🍟"
+  },
+  {
+    "id": 96,
+    "category": "Child Health",
+    "title": "School Hygiene",
+    "description": "Teach children to keep clean at school.",
+    "icon": "🏫"
+  },
+  {
+    "id": 97,
+    "category": "Child Health",
+    "title": "First Aid Knowledge",
+    "description": "Parents should learn basic first aid for emergencies.",
+    "icon": "⛑️"
+  },
+  {
+    "id": 98,
+    "category": "Child Health",
+    "title": "Mental Health",
+    "description": "Listen to children’s feelings and support emotional well-being.",
+    "icon": "🧠"
+  },
+  {
+    "id": 99,
+    "category": "Child Health",
+    "title": "Avoid Secondhand Smoke",
+    "description": "Keep children away from cigarette smoke.",
+    "icon": "🚭"
+  },
+  {
+    "id": 100,
+    "category": "Child Health",
+    "title": "Regular Checkups",
+    "description": "Take children for health checkups at least twice a year.",
+    "icon": "👨‍⚕️"
   }
 ]
