@@ -86,12 +86,6 @@ fetch("tips.json")
                     </div>
                     <svg class="h-10 w-10" viewBox="0 0 100 100"><defs><linearGradient id="leafGradientHeader" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#22c55e;stop-opacity:1"></stop><stop offset="100%" style="stop-color:#16a34a;stop-opacity:1"></stop></linearGradient></defs><path d="M42,20 H58 V42 H80 V58 H58 V80 H42 V58 H20 V42 H42Z" class="fill-gray-300"></path><path d="M60,20 C80,20 90,40 70,60 C50,80 50,60 60,40 C65,30 60,20 60,20Z" fill="url(#leafGradientHeader)" transform="rotate(45 50 50)"></path></svg>
                 </header>
-                <div class="relative">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg>
-                    </div>
-                    <input id="search-bar" type="text" placeholder="Search health tips..." value="${searchTerm}" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-naija-green focus:border-naija-green sm:text-sm shadow-sm" />
-                </div>
                 <h2 class="text-xl font-bold text-gray-700 mt-6 mb-4">${activeTab} Tips</h2>
                 <div class="space-y-4">${tipCardsHtml}</div>
             </div>
@@ -256,6 +250,10 @@ fetch("tips.json")
     return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   }
 
+  //Removed the search bar in maps
+
+  const searchContainer = document.getElementById('searchContainer');
+
   const renderBottomNav = () => {
     bottomNav.innerHTML = navItems
       .map((item) => {
@@ -286,6 +284,7 @@ fetch("tips.json")
   const renderContent = () => {
     if (activeTab === "Map") {
       renderMapScreen();
+      searchContainer.remove()
     } else {
       renderTipsScreen();
     }
@@ -342,3 +341,32 @@ fetch("tips.json")
   // Initial check
   updateOnlineStatus();
 });
+
+const chatIcon = document.getElementById("chatIcon");
+  const chatWindow = document.getElementById("chatWindow");
+
+  // Toggle chat window when icon is clicked
+  chatIcon.addEventListener("click", () => {
+    chatWindow.style.display = chatWindow.style.display === "flex" ? "none" : "flex";
+  });
+
+  // Send message to backend
+  async function sendMessage() {
+    const input = document.getElementById("userInput").value;
+    if (!input) return;
+
+    const chatbox = document.getElementById("chatbox");
+    chatbox.innerHTML += `<div><b>You:</b> ${input}</div>`;
+
+    const res = await fetch("/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: input })
+    });
+
+    const data = await res.json();
+    chatbox.innerHTML += `<div><b>Bot:</b> ${data.reply}</div>`;
+
+    document.getElementById("userInput").value = "";
+    chatbox.scrollTop = chatbox.scrollHeight; // auto-scroll
+  }

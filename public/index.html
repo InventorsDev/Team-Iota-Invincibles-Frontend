@@ -34,6 +34,66 @@
     height: 250px;
     border-radius: 12px;
   }
+
+  /* Chat bubble icon */
+  #chatIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Chat window */
+  #chatWindow {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none; /* hidden at first */
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  #chatbox {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  #chatInput {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+
+  #chatInput input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+  }
+
+  #chatInput button {
+    padding: 8px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body class="bg-gray-50 font-sans">
@@ -68,6 +128,17 @@
 
         <!-- Main Content (Tips & Map Screens) -->
         <div id="main-app" class="screen">
+          
+           <!-- Search Bar stays persistent -->
+          <div id="searchContainer" class="p-4 bg-white sticky top-0 z-30 flex justify-between">
+          <input 
+          id="search-bar"
+          type="text"
+          placeholder="Search health tips..."
+          class="w-full p-2 border rounded-md focus:ring focus:ring-naija-green"
+          />
+          </div>
+
             <main id="main-content" class="pb-20">
                 <!-- Content will be dynamically injected here -->
             </main>
@@ -76,6 +147,17 @@
             </nav>
         </div>
     </div>
+
+    <div id="chatIcon">💬</div>
+
+<!-- Chat Window -->
+<div id="chatWindow">
+  <div id="chatbox"></div>
+  <div id="chatInput">
+    <input id="userInput" type="text" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
 
 <script src="app.js" defer></script>
 
